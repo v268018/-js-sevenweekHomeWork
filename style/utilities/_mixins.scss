@@ -1,0 +1,12 @@
+@mixin pad{
+   @media(max-width:768px) {
+       @content
+   }
+};
+@mixin inputStyle {
+    background-color: #F7F7F7;
+    text-indent: 0.5rem;
+    border: 0px;
+    border-bottom: 2px solid #00807E;
+    color: #818A91;
+}

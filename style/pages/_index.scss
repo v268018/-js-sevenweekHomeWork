@@ -1,0 +1,84 @@
+.addTicket-panel{
+   max-width: 920px;
+   border: 1px solid #FFFFFF;
+   justify-content: space-evenly;
+   margin: 120px auto 100px;
+   box-shadow: 3px 3px 6px #00000029;
+   padding:60px 0px;
+   border-radius: 10px; 
+   margin-bottom: 100px;
+   @include pad{
+    margin:0px auto;
+    border-radius:0px;
+    box-shadow: none;
+   }
+   .addTicket-img,.addTicket-form{
+        width:38%;
+        @include pad{
+            width: 90%;
+        }
+   }
+   .alertMessage{
+       width:48% ;
+       @include pad{
+        width: 90%;
+    }
+   }
+   .addTicket-btn{padding: 10px 40px;}
+} 
+.main-content{
+    background:#F7F7F7;
+    .search-area{ 
+       max-width:920px;
+       margin: 0 auto;
+       padding-top: 60px;
+       margin-bottom: 40px;
+    }
+    .regionSearch{
+       width:25%;
+       min-height: 38px; 
+       border: 1px solid #CED4DA;
+       @include pad{
+           width: 90%;
+       }
+    }
+    .list{
+        max-width: 1120px;
+        margin: 0 auto;
+        .card{
+            width: 30.333%;
+            @include pad{
+                width: 98%;
+            }
+            .card-img--hidden{
+                overflow:hidden;
+                display:block;
+            }
+            .card-img-top{
+                height: 180px;
+                transition: all 1s;
+                &:hover{
+                   transform: scale(1.5);
+                }
+            }
+            .ticketCard-region{
+                padding:8px 20px;
+                background: #64C3BF;
+                color: white;
+                top:-13px;
+                border-radius: 0 5px 5px 0px;
+            }
+            .ticketCard-rank{
+                bottom:-13px;
+                padding: 5px 8px;
+                background: #00807E;
+                border-radius: 0 5px 5px 0px;
+                color: white;
+            }
+        }
+    }
+    
+}
+
+
+

@@ -1,0 +1,35 @@
+.ticket-input{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    @include pad{
+        flex-direction: column;
+        justify-content:start;
+        align-items:start;
+    }
+    label{
+        margin: 0px;
+        font-weight: bold;
+        color: #00807E;
+        @include pad{
+            margin-bottom:8px;
+        }
+    }
+    input,select{
+        width:70%;
+        min-height:30px;
+        @include inputStyle;
+        @include pad{
+            width: 100%;
+        }
+    }
+    textarea{
+        width: 70%;
+        min-height: 111px;
+        margin-bottom: 24px;
+        @include inputStyle;
+        @include pad{
+            width: 100%;
+        }
+    }
+}
